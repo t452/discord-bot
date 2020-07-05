@@ -1,3 +1,4 @@
+import asyncio
 import csv
 import io
 import typing
@@ -6,6 +7,8 @@ from functools import cached_property
 import aiohttp
 import discord
 from discord.ext import commands
+
+from helpers import constants
 
 EMBED_FIELDS = (
     ("Patrol", "Patrol", True),
@@ -43,14 +46,18 @@ class Contacts(commands.Cog):
                     reader = csv.DictReader(io.StringIO(await r.text()))
                     self.db = {row["Concat"]: row for row in reader}
 
+    @commands.is_owner()
     @commands.command()
     async def reloadcontacts(self, ctx: commands.Context):
+        """Reload the contacts database."""
+
         await self.load_db()
 
     @commands.command()
     async def contact(
         self, ctx: commands.Context, *, name: typing.Union[discord.Member, str]
     ):
+        """Look up a contact in the T452 database."""
 
         # Get the string query and the discord member
 
@@ -86,15 +93,52 @@ class Contacts(commands.Cog):
 
         # Send embed
 
-        embed = discord.Embed(
-            title=person["First Name"] + " " + person["Last Name"], color=0xF44336
-        )
+        def make_embed(person, member=None):
+            embed = discord.Embed(
+                title=person["First Name"] + " " + person["Last Name"], color=0xF44336
+            )
 
-        if member is not None:
-            embed.set_author(name=str(member), icon_url=member.avatar_url)
+            if member is not None:
+                embed.set_author(name=str(member), icon_url=member.avatar_url)
 
-        for name, key, inline in EMBED_FIELDS:
-            if (value := person[key]) != "":
-                embed.add_field(name=name, value=value, inline=inline)
+            for name, key, inline in EMBED_FIELDS:
+                if (value := person[key]) != "":
+                    embed.add_field(name=name, value=value, inline=inline)
 
-        await ctx.send(embed=embed)
+            return embed
+
+        message = await ctx.send(embed=make_embed(person))
+
+        # Look for reactions, edit embed
+
+        reactions = {
+            constants.emoji_dict["s"][0]: person["Patrol"] + person["P_Num"] + "1",
+            constants.emoji_dict["f"][0]: person["Patrol"] + person["P_Num"] + "2",
+            constants.emoji_dict["m"][0]: person["Patrol"] + person["P_Num"] + "3",
+        }
+
+        async def add_reactions():
+            for x in reactions:
+                await message.add_reaction(x)
+
+        def check(reaction, user):
+            return (
+                user.id == ctx.author.id
+                and reaction.emoji in reactions
+                and reaction.message.id == message.id
+            )
+
+        self.bot.loop.create_task(add_reactions())
+
+        try:
+            while True:
+                reaction, user = await self.bot.wait_for(
+                    "reaction_add", timeout=120, check=check
+                )
+                person = self.db[reactions[reaction.emoji]]
+
+                await reaction.remove(user)
+                await message.edit(embed=make_embed(person))
+
+        except asyncio.TimeoutError:
+            await message.add_reaction("❌")

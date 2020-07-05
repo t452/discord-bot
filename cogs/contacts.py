@@ -51,13 +51,21 @@ class Contacts(commands.Cog):
     async def reloadcontacts(self, ctx: commands.Context):
         """Reload the contacts database."""
 
+        message = await ctx.send("Reloading contacts database...")
         await self.load_db()
+        await message.edit("Contacts database has been reloaded.")
 
     @commands.command()
     async def contact(
         self, ctx: commands.Context, *, name: typing.Union[discord.Member, str]
     ):
         """Look up a contact in the T452 database."""
+
+        if not hasattr(self, "db"):
+            await ctx.send(
+                "The database isn't loaded, please try again in a few seconds."
+            )
+            return
 
         # Get the string query and the discord member
 
@@ -141,4 +149,4 @@ class Contacts(commands.Cog):
                 await message.edit(embed=make_embed(person))
 
         except asyncio.TimeoutError:
-            await message.add_reaction("❌")
+            await message.add_reaction("🛑")

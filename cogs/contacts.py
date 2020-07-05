@@ -33,7 +33,9 @@ class Contacts(commands.Cog):
 
     async def load_db(self):
         if "contacts_csv" not in self.bot.db:
-            self.db = None
+            self.db[
+                "contacts_csv"
+            ] = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNevZeUoa3JrYJ193Ozml9Be7P12mWKfIfdl3jSmIgr4oamaHCHjuEDkGAk7h2V4wCJVJ1hztZ4uUj/pub?output=csv"
 
         async with aiohttp.ClientSession() as session:
             async with session.get(self.bot.db["contacts_csv"]) as r:

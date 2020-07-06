@@ -44,7 +44,9 @@ class Contacts(commands.Cog):
             async with session.get(self.bot.db["contacts_csv"]) as r:
                 if r.status == 200:
                     reader = csv.DictReader(io.StringIO(await r.text()))
-                    self.db = {row["Concat"]: row for row in reader}
+                    self.db = {
+                        row["Concat"]: row for row in reader if row["Patrol"] != ""
+                    }
 
     @commands.is_owner()
     @commands.command()
@@ -53,7 +55,7 @@ class Contacts(commands.Cog):
 
         message = await ctx.send("Reloading contacts database...")
         await self.load_db()
-        await message.edit("Contacts database has been reloaded.")
+        await message.edit(content="Contacts database has been reloaded.")
 
     @commands.command()
     async def contact(
@@ -103,7 +105,9 @@ class Contacts(commands.Cog):
 
         def make_embed(person, member=None):
             embed = discord.Embed(
-                title=person["First Name"] + " " + person["Last Name"], color=0xF44336
+                title=person["First Name"] + " " + person["Last Name"],
+                description=person["S/F/M"],
+                color=0xF44336,
             )
 
             if member is not None:
@@ -115,14 +119,14 @@ class Contacts(commands.Cog):
 
             return embed
 
-        message = await ctx.send(embed=make_embed(person))
+        message = await ctx.send(embed=make_embed(person, member))
 
         # Look for reactions, edit embed
 
         reactions = {
-            constants.emoji_dict["s"][0]: person["Patrol"] + person["P_Num"] + "1",
-            constants.emoji_dict["f"][0]: person["Patrol"] + person["P_Num"] + "2",
-            constants.emoji_dict["m"][0]: person["Patrol"] + person["P_Num"] + "3",
+            "👶🏻": person["Patrol"] + person["P_Num"] + "1",
+            "👨🏻": person["Patrol"] + person["P_Num"] + "2",
+            "👩🏻": person["Patrol"] + person["P_Num"] + "3",
         }
 
         async def add_reactions():
@@ -144,9 +148,20 @@ class Contacts(commands.Cog):
                     "reaction_add", timeout=120, check=check
                 )
                 person = self.db[reactions[reaction.emoji]]
+                try:
+                    member = next(
+                        x
+                        for x in ctx.guild.members
+                        if x.display_name.lower()
+                        == person["First Name"].lower()
+                        + " "
+                        + person["Last Name"].lower()
+                    )
+                except StopIteration:
+                    member = None
 
                 await reaction.remove(user)
-                await message.edit(embed=make_embed(person))
+                await message.edit(embed=make_embed(person, member))
 
         except asyncio.TimeoutError:
             await message.add_reaction("🛑")

@@ -22,7 +22,7 @@ EMBED_FIELDS = (
     ("Address", "Address", False),
 )
 
-CONTACTS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNevZeUoa3JrYJ193Ozml9Be7P12mWKfIfdl3jSmIgr4oamaHCHjuEDkGAk7h2V4wCJVJ1hztZ4uUj/pub?output=csv"
+CONTACTS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRSUSaX2yTNs9r6F6vtVUUCUafc3iY43IhpgVBgYAKOvkIA8TfkkxcHl6l1mQqqSKVeOXydoyyI7V2Q/pub?output=csv"
 
 
 def setup(bot: commands.Bot):

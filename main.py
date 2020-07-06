@@ -19,15 +19,14 @@ bot = commands.Bot(
     case_insensitive=True,
 )
 
+# Load cogs
+
 bot.load_extension(f"jishaku")
 
-# Run
+for i in dir(cogs):
+    if not i.startswith("_"):
+        bot.load_extension(f"cogs.{i}")
 
-with shelve.open("data") as db:
-    bot.db = db
+# Run bot
 
-    for i in dir(cogs):
-        if not i.startswith("_"):
-            bot.load_extension(f"cogs.{i}")
-
-    bot.run(bot_token)
+bot.run(bot_token)

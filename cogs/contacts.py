@@ -22,6 +22,8 @@ EMBED_FIELDS = (
     ("Address", "Address", False),
 )
 
+CONTACTS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNevZeUoa3JrYJ193Ozml9Be7P12mWKfIfdl3jSmIgr4oamaHCHjuEDkGAk7h2V4wCJVJ1hztZ4uUj/pub?output=csv"
+
 
 def setup(bot: commands.Bot):
     bot.add_cog(Contacts(bot))
@@ -35,13 +37,8 @@ class Contacts(commands.Cog):
         self.bot.loop.create_task(self.load_db())
 
     async def load_db(self):
-        if "contacts_csv" not in self.bot.db:
-            self.db[
-                "contacts_csv"
-            ] = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSNevZeUoa3JrYJ193Ozml9Be7P12mWKfIfdl3jSmIgr4oamaHCHjuEDkGAk7h2V4wCJVJ1hztZ4uUj/pub?output=csv"
-
         async with aiohttp.ClientSession() as session:
-            async with session.get(self.bot.db["contacts_csv"]) as r:
+            async with session.get(CONTACTS_URL) as r:
                 if r.status == 200:
                     reader = csv.DictReader(io.StringIO(await r.text()))
                     self.db = {

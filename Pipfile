@@ -9,6 +9,7 @@ black = "*"
 [packages]
 "discord.py" = "*"
 jishaku = "*"
+python-dateutil = "*"
 
 [requires]
 python_version = "3.8"

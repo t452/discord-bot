@@ -26,15 +26,15 @@ CONTACTS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRSUSaX2yTNs9r6F
 
 
 def setup(bot: commands.Bot):
-    bot.add_cog(Contacts(bot))
+    bot.add_cog(Contact(bot))
 
 
-class Contacts(commands.Cog):
+class Contact(commands.Cog):
     """For getting contact information."""
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.bot.loop.create_task(self.load_db())
+        self.bot.loop.run_until_complete(self.load_db())
 
     async def load_db(self):
         async with aiohttp.ClientSession() as session:

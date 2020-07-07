@@ -114,12 +114,12 @@
                     "text": "Present yourself to your leader, prepared for an overnight camping trip. Show the personal and camping gear you will use. Show the right way to pack and carry it."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "1b",
                     "text": "Spend at least one night on a patrol or troop campout. Sleep in a tent you have helped pitch."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "1c",
                     "text": "Tell how you practiced the Outdoor Code on a campout or outing."
                 },
@@ -129,12 +129,12 @@
                     "text": "On the campout, assist in preparing one of the meals. Tell why it is important for each patrol member to share in meal preparation and cleanup."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2b",
                     "text": "While on a campout, demonstrate an appropriate method of safely cleaning items used to prepare, serve, and eat a meal."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2c",
                     "text": "Explain the importance of eating together as a patrol."
                 },
@@ -144,17 +144,17 @@
                     "text": "Demonstrate a practical use of the square knot."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3b",
                     "text": "Demonstrate a practical use of two half-hitches."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3c",
                     "text": "Demonstrate a practical use of the taut-line hitch."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3d",
                     "text": "Demonstrate proper care, sharpening, and use of the knife, saw, and ax. Describe when each should be used."
                 },
@@ -204,17 +204,17 @@
                     "text": "Choking"
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "4b",
                     "text": "Describe common poisonous or hazardous plants; identify any that grow in your local area or campsite location. Tell how to treat for exposure to them."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "4c",
                     "text": "Tell what you can do while on a campout or other outdoor activity to prevent or reduce the occurrence of injuries or exposure listed in Tenderfoot requirements 4a and 4b."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "4d",
                     "text": "Assemble a personal first-aid kit to carry with you on future campouts and hikes. Tell how each item in the kit would be used."
                 },
@@ -224,12 +224,12 @@
                     "text": "Explain the importance of the buddy system as it relates to your personal safety on outings and in your neighborhood. Use the buddy system while on a troop or patrol outing."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5b",
                     "text": "Describe what to do if you become lost on a hike or campout."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5c",
                     "text": "Explain the rules of safe hiking, both on the highway and cross-country, during the day and at night."
                 },
@@ -259,12 +259,12 @@
                     "text": "1 mile walk/run _____________ (record the time)"
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6b",
                     "text": "Develop and describe a plan for improvement in each of the activities listed in Tenderfoot requirement 6a. Keep track of your activity for at least 30 days."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6c",
                     "text": "Show improvement (of any degree) in each activity listed in Tenderfoot requirement 6a after practicing for 30 days.30 days later"
                 },
@@ -284,7 +284,7 @@
                     "text": "Demonstrate how to display, raise, lower, and fold the American flag."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7b",
                     "text": "Participate in a total of one hour of service in one or more service projects approved by your Scoutmaster. Explain how your service to others relates to the Scout slogan and Scout motto."
                 },
@@ -319,12 +319,12 @@
                     "text": "Since joining Scouts BSA, participate in five separate troop/patrol activities, at least three of which must be held outdoors. Of the outdoor activities, at least two must include overnight camping. These activities do not include troop or patrol meetings. On campouts, spend the night in a tent that you pitch or other structure that you help erect, such as a lean-to, snow cave, or tepee."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "1b",
                     "text": "Explain the principles of Leave No Trace and tell how you practiced them on a campout or outing. This outing must be different from the one used for Tenderfoot requirement 1c."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "1c",
                     "text": "On one of these campouts, select a location for your patrol site and recommend it to your patrol leader, senior patrol leader, or troop guide. Explain what factors you should consider when choosing a patrol site and where to pitch a tent."
                 },
@@ -334,32 +334,32 @@
                     "text": "Explain when it is appropriate to use a fire for cooking or other purposes and when it would not be appropriate to do so."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2b",
                     "text": "Use the tools listed in Tenderfoot requirement 3d to prepare tinder, kindling, and fuel wood for a cooking fire."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2c",
                     "text": "At an approved outdoor location and time, use the tinder, kindling, and fuel wood from Second Class requirement 2b to demonstrate how to build a fire. Unless prohibited by local fire restrictions, light the fire. After allowing the flames to burn safely for at least two minutes, safely extinguish the flames with minimal impact to the fire site."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2d",
                     "text": "Explain when it is appropriate to use a lightweight stove and when it is appropriate to use a propane stove. Set up a lightweight stove or propane stove. Unless prohibited by local fire restrictions, light the stove. Describe the safety procedures for using these types of stoves."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2e",
                     "text": "On one campout, plan and cook one hot breakfast or lunch, selecting foods from MyPlate or the current USDA nutritional model. Explain the importance of good nutrition. Demonstrate how to transport, store, and prepare the foods you selected."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2f",
                     "text": "Demonstrate tying the sheet bend knot. Describe a situation in which you would use this knot."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2g",
                     "text": "Demonstrate tying the bowline knot. Describe a situation in which you would use this knot."
                 },
@@ -369,17 +369,17 @@
                     "text": "Demonstrate how a compass works and how to orient a map. Use a map to point out and tell the meaning of five map symbols."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3b",
                     "text": "Using a compass and map together, take a 5-mile hike (or 10 miles by bike) approved by your adult leader and your parent or guardian."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3c",
                     "text": "Describe some hazards or injuries that you might encounter on your hike and what you can do to help prevent them."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3d",
                     "text": "Demonstrate how to find directions during the day and at night without using a compass or an electronic device."
                 },
@@ -394,17 +394,17 @@
                     "text": "Tell what precautions must be taken for a safe swim."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5b",
                     "text": "Demonstrate your ability to pass the BSA beginner test: Jump feet first into water over your head in depth, level off and swim 25 feet on the surface, stop, turn sharply, resume swimming, then return to your starting place."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5c",
                     "text": "Demonstrate water rescue methods by reaching with your arm or leg, by reaching with a suitable object, and by throwing lines and objects."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5d",
                     "text": "Explain why swimming rescues should not be attempted when a reaching or throwing rescue is possible. Explain why and how a rescue swimmer should avoid contact with the victim."
                 },
@@ -449,22 +449,22 @@
                     "text": "Heatstroke, dehydration, hypothermia, and hyperventilation"
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6b",
                     "text": "Show what to do for \"hurry\" cases of stopped breathing, stroke, severe bleeding, and ingested poisoning."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6c",
                     "text": "Tell what you can do while on a campout or hike to prevent or reduce the occurrence of the injuries listed in Second Class requirements 6a and 6b."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6d",
                     "text": "Explain what to do in case of accidents that require emergency response in the home and backcountry. Explain what constitutes an emergency and what information you will need to provide to a responder."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6e",
                     "text": "Tell how you should respond if you come upon the scene of a vehicular accident."
                 },
@@ -474,12 +474,12 @@
                     "text": "After completing Tenderfoot requirement 6c, be physically active at least 30 minutes each day for five days a week for four weeks. Keep track of your activities."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7b",
                     "text": "Share your challenges and successes in completing Second Class requirement 7a. Set a goal for continuing to include physical activity as part of your daily life and develop a plan for doing so."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7c",
                     "text": "Participate in a school, community, or troop program on the dangers of using drugs, alcohol, and tobacco and other practices that could be harmful to your health. Discuss your participation in the program with your family, and explain the dangers of substance addictions. Report to your Scoutmaster or other adult leader in your troop about which parts of the Scout Oath and Scout Law relate to what you learned."
                 },
@@ -489,22 +489,22 @@
                     "text": "Participate in a flag ceremony for your school, religious institution, chartered organization, community, or Scouting activity."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "8b",
                     "text": "Explain what respect is due the flag of the United States."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "8c",
                     "text": "With your parents or guardian, decide on an amount of money that you would like to earn, based on the cost of a specific item you would like to purchase. Develop a written plan to earn the amount agreed upon and follow that plan; it is acceptable to make changes to your plan along the way. Discuss any changes made to your original plan and whether you met your goal."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "8d",
                     "text": "At a minimum of three locations, compare the cost of the item for which you are saving to determine the best place to purchase it. After completing Second Class requirement 8c, decide if you will use the amount that you earned as originally intended, save all or part of it, or use it for another purpose."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "8e",
                     "text": "Participate in two hours of service through one or more service projects approved by your Scoutmaster. Tell how your service to others relates to the Scout Oath."
                 },
@@ -514,7 +514,7 @@
                     "text": "Explain the three R's of personal safety and protection."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "9b",
                     "text": "Describe bullying; tell what the appropriate response is to someone who is bullying you or another person."
                 },
@@ -544,7 +544,7 @@
                     "text": "Since joining Scouts BSA, participate in 10 separate troop/patrol activities, at least six of which must be held outdoors. Of the outdoor activities, at least three must include overnight camping. These activities do not include troop or patrol meetings. On campouts, spend the night in a tent that you pitch or other structure that you help erect, such as a lean-to, snow cave, or tepee."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "1b",
                     "text": "Explain each of the principles of Tread Lightly! and tell how you practiced them on a campout or outing. This outing must be different from the ones used for Tenderfoot requirement 1c and Second Class requirement 1b."
                 },
@@ -554,22 +554,22 @@
                     "text": "Help plan a menu for one of the above campouts that includes at least one breakfast, one lunch, and one dinner, and that requires cooking at least two of the meals. Tell how the menu includes the foods from MyPlate or the current USDA nutritional model and how it meets nutritional needs for the planned activity or campout."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2b",
                     "text": "Using the menu planned in First Class requirement 2a, make a list showing a budget and the food amounts needed to feed three or more youth. Secure the ingredients."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2c",
                     "text": "Show which pans, utensils, and other gear will be needed to cook and serve these meals."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2d",
                     "text": "Demonstrate the procedures to follow in the safe handling and storage of fresh meats, dairy products, eggs, vegetables, and other perishable food products. Show how to properly dispose of camp garbage, cans, plastic containers, and other rubbish."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "2e",
                     "text": "On one campout, serve as cook. Supervise your assistant(s) in using a stove or building a cooking fire. Prepare the breakfast, lunch, and dinner planned in First Class requirement 2a. Supervise the cleanup."
                 },
@@ -579,17 +579,17 @@
                     "text": "Discuss when you should and should not use lashings."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3b",
                     "text": "Demonstrate tying the timber hitch and clove hitch."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3c",
                     "text": "Demonstrate tying the square, shear, and diagonal lashings by joining two or more poles or staves together."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "3d",
                     "text": "Use lashings to make a useful camp gadget or structure."
                 },
@@ -599,7 +599,7 @@
                     "text": "Using a map and compass, complete an orienteering course that covers at least one mile and requires measuring the height and/or width of designated items (tree, tower, canyon, ditch, etc.)."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "4b",
                     "text": "Demonstrate how to use a handheld GPS unit, GPS app on a smartphone, or other electronic navigation system. Use GPS to find your current location, a destination of your choice, and the route you will take to get there. Follow that route to arrive at your destination."
                 },
@@ -609,17 +609,17 @@
                     "text": "Identify or show evidence of at least 10 kinds of native plants found in your local area or campsite location. You may show evidence by identifying fallen leaves or fallen fruit that you find in the field, or as part of a collection you have made, or by photographs you have taken."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5b",
                     "text": "Identify two ways to obtain a weather forecast for an upcoming activity. Explain why weather forecasts are important when planning for an event."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5c",
                     "text": "Describe at least three natural indicators of impending hazardous weather, the potential dangerous events that might result from such weather conditions, and the appropriate actions to take."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "5d",
                     "text": "Describe extreme weather conditions you might encounter in the outdoors in your local geographic area. Discuss how you would determine ahead of time the potential risk of these types of weather dangers, alternative planning considerations to avoid such risks, and how you would prepare for and respond to those weather conditions."
                 },
@@ -629,22 +629,22 @@
                     "text": "Successfully complete the BSA swimmer test."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6b",
                     "text": "Tell what precautions must be taken for a safe trip afloat."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6c",
                     "text": "Identify the basic parts of a canoe, kayak, or other boat. Identify the parts of a paddle or an oar."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6d",
                     "text": "Describe proper body positioning in a watercraft, depending on the type and size of the vessel. Explain the importance of proper body position in the boat."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "6e",
                     "text": "With a helper and a practice victim, show a line rescue both as tender and as rescuer. (The practice victim should be approximately 30 feet from shore in deep water.)"
                 },
@@ -654,7 +654,7 @@
                     "text": "Demonstrate bandages for a sprained ankle and for injuries on the head, the upper arm, and the collarbone."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7b",
                     "text": "By yourself and with a partner, show how to:"
                 },
@@ -669,22 +669,22 @@
                     "text": "Transport for at least 25 yards a person with a sprained ankle."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7c",
                     "text": "Tell the five most common signals of a heart attack. Explain the steps (procedures) in cardiopulmonary resuscitation (CPR)."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7d",
                     "text": "Tell what utility services exist in your home or meeting place. Describe potential hazards associated with these utilities and tell how to respond in emergency situations."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7e",
                     "text": "Develop an emergency action plan for your home that includes what to do in case of fire, storm, power outage, and water outage."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "7f",
                     "text": "Explain how to obtain potable water in an emergency."
                 },
@@ -694,7 +694,7 @@
                     "text": "After completing Second Class requirement 7a, be physically active at least 30 minutes each day for five days a week for four weeks. Keep track of your activities."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "8b",
                     "text": "Share your challenges and successes in completing First Class requirement 8a. Set a goal for continuing to include physical activity as part of your daily life."
                 },
@@ -704,17 +704,17 @@
                     "text": "Visit and discuss with a selected individual approved by your leader (for example, an elected official, judge, attorney, civil servant, principal, or teacher) the constitutional rights and obligations of a U.S. citizen."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "9b",
                     "text": "Investigate an environmental issue affecting your community. Share what you learned about that issue with your patrol or troop. Tell what, if anything, could be done by you or your community to address the concern."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "9c",
                     "text": "On a Scouting or family outing, take note of the trash and garbage you produce. Before your next similar outing, decide how you can reduce, recycle, or repurpose what you take on that outing, and then put those plans into action. Compare your results."
                 },
                 {
-                    "depth": 0,
+                    "depth": 1,
                     "index": "9d",
                     "text": "Participate in three hours of service through one or more service projects approved by your Scoutmaster. The project(s) must not be the same service project(s) used for Tenderfoot requirement 7b and Second Class requirement 8e. Explain how your service to others relates to the Scout Law."
                 },

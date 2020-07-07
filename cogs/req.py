@@ -56,12 +56,12 @@ class Req(commands.Cog):
             title = (badge["name"] if not(badge["isEagle"]) else "{} 🦅".format(badge["name"]))
           except:
             title = badge["name"]
+          text_field = "**Requirement {}** \n {}".format(idx+1, "\n".join(("" if x["index"] == "" else " \n {}. ".format(x["index"])) + x["text"] for x in groups[idx]))
           embed = discord.Embed(
-            title=title,
+            title = title,
+            description = text_field,
             color=0xF44336,
           )
-          text_field = "\n".join("    " * x["depth"] + ("" if x["index"] == "" else x["index"] + ". ") + x["text"] for x in groups[idx])
-          embed.add_field(name=f"Requirement {idx+1}", value=text_field, inline=False)
           embed.set_thumbnail(url=f"http://t452.oliverni.com/merit-badges/{imgName}.png")
           embed.set_footer(text=f"Displaying requirement {idx+1} out of {len(groups)}.")
           return embed

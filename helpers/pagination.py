@@ -36,7 +36,7 @@ class Paginator:
                     "⏭️": self.num_pages - 1,
                 }[reaction.emoji] % self.num_pages
 
-                await message.edit(embed=await self.get_page(page, clear))
+                await message.edit(embed=await self.get_page(page))
 
         except asyncio.TimeoutError:
             await message.add_reaction("🛑")

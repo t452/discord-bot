@@ -21,22 +21,27 @@ class Req(commands.Cog):
         self.data = data["ranks"] + data["meritBadges"]
 
     @commands.command()
-    async def req(self, ctx: commands.Context, *args, page: int = 1):
+    async def req(self, ctx: commands.Context, *args):
 
-        name = " ".join(args)
+        if args[-1].isdigit():
+            page = int(args[-1]) - 1
+            args = args[:-1]
+        else:
+            page = 0
 
         try:
-            badge = next(x for x in self.data if name.lower() in x["name"].lower())
-            image_name = badge["name"].replace(" ", "").lower()
+            badge = next(
+                x for x in self.data if " ".join(args).lower() in x["name"].lower()
+            )
         except StopIteration:
             await ctx.send("Couldn't find anything matching that query.")
             return
 
+        image_name = badge["name"].replace(" ", "").lower()
+
         groups = []
-        prev = -1
         for x in badge["requirements"]:
             if x["depth"] == 0:
-                prev = x["depth"]
                 groups.append([])
             groups[-1].append(x)
 
@@ -63,4 +68,4 @@ class Req(commands.Cog):
             return embed
 
         paginator = pagination.Paginator(get_page, len(groups))
-        await paginator.send(self.bot, ctx, page=page - 1)
+        await paginator.send(self.bot, ctx, page=page)

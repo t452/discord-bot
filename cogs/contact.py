@@ -80,8 +80,7 @@ class Contact(commands.Cog):
             person = next(
                 x
                 for x in self.db.values()
-                if name.lower()
-                in x["First Name"].lower() + " " + x["Last Name"].lower()
+                if name.lower() in x["First Name"].lower() + " " + x["Last Name"].lower()
             )
         except StopIteration:
             await ctx.send("Couldn't find anyone matching that query.")

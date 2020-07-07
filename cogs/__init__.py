@@ -1,1 +1,1 @@
-from . import badge, contact, email, help
+from . import contact, email, help, req

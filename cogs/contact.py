@@ -7,6 +7,7 @@ from functools import cached_property
 import aiohttp
 import discord
 from discord.ext import commands
+import os
 
 from helpers import constants
 
@@ -22,12 +23,10 @@ EMBED_FIELDS = (
     ("Address", "Address", False),
 )
 
-CONTACTS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRSUSaX2yTNs9r6F6vtVUUCUafc3iY43IhpgVBgYAKOvkIA8TfkkxcHl6l1mQqqSKVeOXydoyyI7V2Q/pub?output=csv"
-
+CONTACTS_URL = os.getenv("CONTACTS_URL")
 
 def setup(bot: commands.Bot):
     bot.add_cog(Contact(bot))
-
 
 class Contact(commands.Cog):
     """For getting contact information."""

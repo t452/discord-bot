@@ -1,1 +1,1 @@
-from . import contact, email, help, req
+from . import contact, email, help, req, check

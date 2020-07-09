@@ -27,19 +27,19 @@ class Check(commands.Cog):
             async with session.get(PATROL_STANDINGS) as r:
                 if r.status == 200:
                     self.reader = csv.DictReader(io.StringIO(await r.text()))
+
     @commands.command()
     async def standings(self, ctx: commands.Context, *args):
-        #reload CSV file every time command is run
+        # reload CSV file every time command is run
         await self.load_db()
 
-        #create embed
+        # create embed
         embed = discord.Embed(
-            title="Patrolympic Standings", 
+            title="Patrolympic Standings",
             color=0xF44336,
         )
         patrols = self.reader.fieldnames
-        #can't figure how to get the first object of self.reader uwu
-        for row in self.reader:
-            for patrol in patrols:
-                embed.add_field(name=patrol, value=row[patrol],inline=True)
+        row = next(self.reader)
+        for patrol in patrols:
+            embed.add_field(name=patrol, value=row[patrol], inline=True)
         message = await ctx.send(embed=embed)

@@ -42,4 +42,4 @@ class Check(commands.Cog):
         for row in self.reader:
             for patrol in patrols:
                 embed.add_field(name=patrol, value=row[patrol],inline=True)
-        message = await ctx.send(self.bot, embed=embed)
+        message = await ctx.send(embed=embed)

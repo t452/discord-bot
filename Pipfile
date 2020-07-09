@@ -10,6 +10,9 @@ black = "*"
 "discord.py" = "*"
 jishaku = "*"
 python-dateutil = "*"
+humanfriendly = "*"
+profanity-filter = "*"
+mongoengine = "*"
 
 [requires]
 python_version = "3.8"

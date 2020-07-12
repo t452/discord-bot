@@ -32,7 +32,6 @@ class Check(commands.Cog):
     async def standings(self, ctx: commands.Context, *args):
         # reload CSV file every time command is run
         await self.load_db()
-
         # create embed
         embed = discord.Embed(
             title="Patrolympic Standings",

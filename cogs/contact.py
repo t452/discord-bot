@@ -23,10 +23,12 @@ EMBED_FIELDS = (
     ("Address", "Address", False),
 )
 
-CONTACTS_URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSUSaX2yTNs9r6F6vtVUUCUafc3iY43IhpgVBgYAKOvkIA8TfkkxcHl6l1mQqqSKVeOXydoyyI7V2Q/pub?output=csv"
+CONTACTS_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRSUSaX2yTNs9r6F6vtVUUCUafc3iY43IhpgVBgYAKOvkIA8TfkkxcHl6l1mQqqSKVeOXydoyyI7V2Q/pub?output=csv"
+
 
 def setup(bot: commands.Bot):
     bot.add_cog(Contact(bot))
+
 
 class Contact(commands.Cog):
     """For getting contact information."""
@@ -79,7 +81,8 @@ class Contact(commands.Cog):
             person = next(
                 x
                 for x in self.db.values()
-                if name.lower() in x["First Name"].lower() + " " + x["Last Name"].lower()
+                if name.lower()
+                in x["First Name"].lower() + " " + x["Last Name"].lower()
             )
         except StopIteration:
             await ctx.send("Couldn't find anyone matching that query.")

@@ -36,7 +36,9 @@ class Administration(commands.Cog):
         ignore = False
         delete = False
 
-        if not self.pf.is_clean(ctx.message.content) and not (ctx.message.channel.id == 728830756071276665):
+        if not self.pf.is_clean(ctx.message.content) and not (
+            ctx.message.channel.id == 728830756071276665
+        ):
             ignore = True
             delete = True
 

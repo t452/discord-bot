@@ -37,9 +37,7 @@ class CustomHelpCommand(commands.HelpCommand):
         )
 
         for command in commands:
-            name = (
-                f"{self.clean_prefix}{command.qualified_name} {command.signature}"
-            )
+            name = f"{self.clean_prefix}{command.qualified_name} {command.signature}"
             value = command.help or "No help found..."
             embed.add_field(
                 name=name, value=value, inline=False,

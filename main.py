@@ -63,9 +63,18 @@ You must use your **REAL NAME** in order to participate. There are no exceptions
 
 Violation of the above rules may result in a mute and/or, in severe cases, revoking of your Cyber Chip. ''')
     server = bot.get_guild(728821753182289961)
-    message = await bot.wait_for('message', timeout=1000, check=lambda m: m.author.id == member.id)
-    if (m.author.id == 729370299304247337):
+
+    def check_message(m):
+        try:
+            return(m.author.id == member.id and member.dm_channel.id == m.channel.id)
+        except:
+            return(False)
+
+    message = await bot.wait_for('message', timeout=1000, check=lambda m: check_message(m))
+
+    if (message.author.id == 729370299304247337):
         return
+
     guildmember = server.get_member(message.author.id)
 
     await guildmember.edit(nick=message.content)
